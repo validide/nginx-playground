@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "streetsidesoftware.code-spell-checker",
+        "editorconfig.editorconfig",
+        "usernamehw.errorlens",
+        "ms-vscode-remote.remote-containers"
+    ]
+}
