@@ -1,12 +1,14 @@
 {
-    "name": "nginx-playground",
-    "build": {
-      "dockerfile": "Dockerfile",
-      "context": ".."
-    },
-    "forwardPorts": [8080],
-    "mounts": [
-      "source=${localWorkspaceFolder}/nginx-logs,target=/var/log/nginx,type=bind"
-    ],
-    "postStartCommand": "nginx -g 'daemon off;'"
-  }
+  "name": "nginx-playground",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "forwardPorts": [
+    10042
+  ],
+  "mounts": [
+    "source=${localWorkspaceFolder}/nginx-logs,target=/var/log/nginx,type=bind"
+  ],
+  "postStartCommand": "nginx -g 'daemon off;'"
+}
